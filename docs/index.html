@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Budget Planner | Vaihit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Budget Planner</h1>
+
+    <input id="budget" type="number" placeholder="Set Monthly Budget">
+    <button onclick="setBudget()">Set Budget</button>
+
+    <input id="category" placeholder="Category">
+    <input id="amount" type="number" placeholder="Amount">
+    <button onclick="addExpense()">Add Expense</button>
+
+    <div class="summary">
+      <p>Total Spent: <span id="spent">0</span></p>
+      <p>Remaining: <span id="remaining">0</span></p>
+    </div>
+
+    <div id="categories"></div>
+
+    <footer>Built under <strong>Vaihit</strong></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
